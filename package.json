@@ -12,5 +12,8 @@
     "Taiga"
   ],
   "author": "Alexei Morozov",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
 }
