@@ -4,7 +4,10 @@
   "description": "angular + UI Taiga",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch db.json"
+    "server": "json-server --watch db.json",
+    "client-install": "npm install --prefix client",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
   },
   "keywords": [
     "angular",
@@ -16,7 +19,9 @@
   "dependencies": {
     "json-server": "^0.17.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bruins288/test_3.git"
